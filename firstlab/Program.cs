@@ -10,7 +10,7 @@ namespace firstlab
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
+            string a = Console.ReadLine();//reading from the console
             string[] f = a.Split();//spliting an array of strings into parts
 
             foreach( string i in f)
