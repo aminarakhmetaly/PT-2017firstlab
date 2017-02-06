@@ -10,14 +10,12 @@ namespace firstlab
     {
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();//reading from the console
-            string[] f = a.Split();//spliting an array of strings into parts
-
-            foreach( string i in f)
+           
+            foreach( string i in args)
             {
                 int n = 0;
                 int p = int.Parse(i);
-                for (int k = 1; k <= Math.Sqrt(p); k++)//going till the root of given numbers
+                for (int k = 1; k <= (p); k++)
                 {
                     if (int.Parse(i) % k == 0)//checking whether number is prime or not
                     {
