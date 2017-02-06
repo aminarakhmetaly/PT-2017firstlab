@@ -16,7 +16,8 @@ namespace firstlab
             foreach( string i in f)
             {
                 int n = 0;
-                for (int k = 1; k <= int.Parse(i); k++)
+                int p = int.Parse(i);
+                for (int k = 1; k <= Math.Sqrt(p); k++)//going till the root of given numbers
                 {
                     if (int.Parse(i) % k == 0)//checking whether number is prime or not
                     {
