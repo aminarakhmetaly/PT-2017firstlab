@@ -15,14 +15,15 @@ namespace firstlab
             {
                 int n = 0;
                 int p = int.Parse(i);
-                for (int k = 1; k <= (p); k++)
+                for (int k = 1; k <= Math.Sqrt(p); k++)//checking till the roots of given numbers
+
                 {
                     if (int.Parse(i) % k == 0)//checking whether number is prime or not
                     {
                     n++;
                     }
                 }
-            if (n == 2)
+            if (n < 2)
                 Console.WriteLine(i);//taking solution
             }
         Console.ReadKey();
